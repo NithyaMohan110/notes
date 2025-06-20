@@ -1,0 +1,45 @@
+IMPORTANT INTERVIEW QUESTIONS ON ORACLE HCM:
+
+What is Oracle HCM Cloud?
+What are the key modules in HCM cloud and their uses?
+What are the types of Roles?
+How to create custom roles with some privileges?
+What is a Security Profile?
+	Define data access restrictions based on BU,Country,etc..
+How do you troubleshoot when user cannot see employer data?
+What are Integrations and Data Loading?
+What are the different integration tools in HCM?
+	(6 tools)
+	HDL(HCM Data Loader)(more Complex but once created its easy)(//extension for HDL files// .dat files)
+	HSDL(HCM Spreadsheet Data Loader)(.xsl)
+	OTBI(Oracle Transactional Business Intelligence)
+	BIP(Business Intelligence Publisher)
+	REST API
+	PBL(Payroll Batch Loaders)
+Difference b/w OTBI and BIP reports?
+Difference b/w HDL and HSDL?
+
+
+
+MCQ's:
+
+What is Oracle HCM Cloud?
+Which subscription model provides access only to application - SaaS
+What is the primary function of duty roles in fusion application? -[Assigning privileges to the user and] providing access to screens and data
+Where can you locate implementation modules? - docs.oracle.com
+Why are we assigning roles in fusion application? - Defining user permission and task assigning
+Which type of role in oracle fusion is implemented as Enterprise roles? - Abstact Role
+What is the primary purpose of creating legal entity? - Establishing enterprise entity
+What are used as templates to create profiles? - Profile types
+What is the correct order of implementing the action framework? - Action type>action>action reason
+Identify the set enabled objects[also known as reference objects] used for partitioning reference data. - Departments,Locations,Jobs and Grades
+What is the primary function of Global HR in HCM Fusion? - Maintaining workforce data and perfroming transactions 
+
+
+
+
+
+
+
+
+

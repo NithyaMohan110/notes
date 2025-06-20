@@ -1,0 +1,19 @@
+BI Publisher Roles:
+--------------------
+BI Publisher has 4 main abstract roles
+1. BI Consumer Role - can run any report but cannot edit. If a report job is already scheduled, he can view the output.
+2.BI Author Role - He can create or edit reports and can schedule report jobs but cannot create or edit data models.
+3.BI Data Model Developer - He can do all the things BI Author does, plus can create or edit data model.
+4.BI Administrator - He can do anything what BI Data Model Dev does plus additional things including system or server level 
+setups(creating ftp servers, creating servers).
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Access Control List(ACL):
+--------------------------
+This can be attached to any ofthe individual data objects (typically attached to reports but can be attached to data models as well).
+This can be given at user level or role level.
+If it is granted to the user, it is the highest priority.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+

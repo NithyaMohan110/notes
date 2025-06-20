@@ -1,0 +1,269 @@
+DEFINITIONS:
+Below are basic, plain-language definitions and overviews for each of these topics, from general cloud concepts to specific points in Fusion Cloud HCM.
+
+---
+
+## Cloud Service Models
+
+1. **Cloud Computing:**  
+   The idea behind cloud computing is to provide computing services—like storage, servers, databases, networking, software, and analytics—over the internet. This allows companies to use resources on demand, paying only for what they need, without having to own or maintain physical hardware.
+
+2. **IaaS (Infrastructure as a Service):**  
+   With IaaS, you rent the fundamental IT resources such as virtual machines, storage, and networks. The cloud provider manages the physical hardware, while you take care of the operating systems and applications you install. Think of it as renting a computer room where you set up your own computers.
+
+3. **PaaS (Platform as a Service):**  
+   PaaS goes a step further by offering a complete development and deployment platform in the cloud. It comes with pre-built tools and environments to help developers design, test, and deploy applications without having to manage the underlying hardware or operating systems. It’s like renting an office with all the necessary equipment and tools already provided.
+
+4. **SaaS (Software as a Service):**  
+   SaaS is where you use fully hosted software applications over the internet. The provider takes care of everything—servers, data, security, and updates—while you simply access the software through a web browser. Familiar examples include email services like Gmail or business tools like Salesforce.
+
+---
+
+## Enterprise Applications
+
+5. **ERP (Enterprise Resource Planning):**  
+   ERP is a type of business management software that integrates a wide range of corporate functions—from finance and human resources to supply chain and manufacturing—into a single unified system. This helps organizations streamline processes, improve data accuracy, and support informed decision-making.
+
+6. **HCM Fusion Cloud:**  
+   HCM Fusion Cloud is Oracle’s cloud-based Human Capital Management system. It centralizes HR processes such as hiring, employee data management, payroll, talent development, and performance management all within one integrated suite. The cloud-based nature ensures regular updates, scalability, and integrated analytics, helping businesses manage their workforce more efficiently.
+
+---
+
+## Fusion Cloud HCM – Functional Topics
+
+These are the modules and features commonly seen from a functional (business process) perspective in Fusion Cloud HCM:
+
+- **Core HR:**  
+  Manages employee records, personal data, benefits enrollment, work terms, and compliance. It’s the heart of tracking an employee’s overall information.
+
+- **Workforce Management:**  
+  Deals with organizational structures, job positions, assignments, transfers (local and global), and terminations. It covers how employees are moved or promoted within the organization.
+
+- **Talent Management:**  
+  Focuses on recruiting, onboarding, performance reviews, career development, and succession planning. This module is all about developing and retaining talent.
+
+- **Payroll Integration:**  
+  Connects the HR data to payroll systems, ensuring that compensation, deductions, and benefits are handled accurately per employee and in compliance with regulations.
+
+- **Employee and Manager Self-Service:**  
+  Provides interfaces where employees can update their personal information and request time off, and managers can approve requests, review team performance, and manage reporting.
+
+- **Reporting & Analytics:**  
+  Tools like BI Publisher and OTBI allow real-time monitoring and reporting of HR data, offering insights into trends like headcount, turnover, and performance metrics.
+
+- **Global HR Management:**  
+  Supports the complexities of managing an international workforce, including country-specific compliance, localization, and cross-border assignments.
+
+---
+
+## Fusion Cloud HCM – Technical Topics
+
+From a technical standpoint, here are key areas in Fusion Cloud HCM:
+
+- **Data Structures & Tables:**  
+  Understanding core tables (like `PER_ALL_PEOPLE_F` for people and `PER_ALL_ASSIGNMENTS_M` for assignments) is crucial. These tables hold all employee, job, and assignment data with effective dates to track histories over time.
+
+- **Data Loaders:**  
+  Tools such as HDL (HCM Data Loader) and HSDL (Spreadsheet Data Loader) are used for importing, updating, and migrating large volumes of HR data efficiently into the system.
+
+- **Integrations & Interfaces:**  
+  The system can connect to and exchange data with external applications (like payroll, benefits, or time management systems) using REST/SOAP web services, ensuring seamless data flow between systems.
+
+- **Reporting Tools & Customizations:**  
+  BI Publisher is used for creating pixel-perfect, formatted reports, while OTBI (Oracle Transactional Business Intelligence) enables dynamic dashboards and real-time analysis. Customizations can be done using flexfields (custom fields) and value sets (lists of allowed values) to capture additional data or enforce business rules.
+
+- **Security & Role Management:**  
+  This involves setting up user roles, permissions, and data access controls to ensure that sensitive HR data is protected and only accessible by those with proper rights.
+
+- **Cloud Updates & Patches:**  
+  Since Fusion Cloud is a cloud-based service, it receives regular updates and patches. Understanding the impact of these updates on existing processes is also key from a technical integration standpoint.
+
+Below is a glossary of basic definitions that covers many of the key topics in Core HR and Global HR. These definitions explain the key elements you might come across when working with a modern HR system:
+
+---
+
+### 1. Employee Self-Service (often denoted as ESC/ES)
+
+- **Definition:**  
+  A web-based portal that allows employees to access and manage their own HR-related information. This includes updating personal details, checking payslips, submitting time-off or leave requests, and sometimes even accessing benefits information—all without needing to go through HR staff.
+
+---
+
+### 2. Payroll
+
+- **Definition:**  
+  The process and associated software system responsible for calculating employee wages, processing deductions (such as tax, benefits, and other withholdings), and distributing payments. Payroll ensures that employees are paid accurately and on time, while also producing related reports for compliance and auditing.
+
+---
+
+### 3. Grades
+
+- **Definition:**  
+  A classification system used to designate the relative level or rank of a job. Each grade defines a range of responsibilities and a corresponding pay scale. Grades help ensure equitable compensation and facilitate career progression by grouping positions of similar complexity together.
+
+---
+
+### 4. Positions
+
+- **Definition:**  
+  Specific slots or roles within the organization’s structure where employees are assigned. A position outlines the formal work expectation—it often includes details like reporting lines, department affiliation, and sometimes an associated job description. Unlike a job (which is the general description of work), a position is the actual instance of that work being filled by an individual.
+
+---
+
+### 5. Jobs
+
+- **Definition:**  
+  Standardized descriptions that specify the duties, responsibilities, required skills, and qualifications for a type of work. A job is a template that can be used to fill numerous positions. For example, the job description for “Systems Analyst” remains consistent even when different employees fill that role in various parts of the organization.
+
+---
+
+### 6. Trees
+
+- **Definition:**  
+  Hierarchical visual representations used in HR to map out organizational structures, reporting relationships, or job family groupings. An organizational tree (or org chart) shows how departments and roles are arranged, while a career or job family tree outlines potential progression paths within specific areas.
+
+---
+
+### 7. Employees
+
+- **Definition:**  
+  The individuals who work for an organization. Their personal information, job assignments, and related data (such as hire date, payroll details, and performance metrics) are stored and managed in the HR system. Employees are the central focus of Core HR.
+
+---
+
+### 8. Types of Workers
+
+- **Definition:**  
+  Categories that distinguish employees based on the nature of their employment. These may include:
+  - **Full-Time Employees:** Regular, permanent staff.
+  - **Part-Time Employees:** Staff working fewer hours than full-time.
+  - **Contract or Contingent Workers:** Hired for specific tasks or durations.
+  - **Temporary Workers/Interns:** Short-term or developmental roles.
+
+---
+
+### 9. Roles
+
+- **Definition:**  
+  Roles define both the responsibilities assigned to a person within the organization and the system permissions associated with their profile. Functionally, this could be a job title like “Manager” or “Analyst”, while technically, it might refer to the security role that determines what HR data the user can view or modify in the system.
+
+---
+
+### 10. Jobs
+
+- **Definition:**  
+  Differentiations within the broad category of jobs to accommodate various career paths or business functions. For instance, jobs can be grouped into technical, managerial, administrative, operational, or professional categories. This classification supports structured hiring, career mapping, and compensation planning.
+
+---
+
+### 11. Departments (Depts)
+
+- **Definition:**  
+  Organizational units that group employees based on similar functions, specializations, or business activities (for example, HR, Finance, IT, or Sales). Departments help define the structure of reporting lines, budgeting, and strategic focus within the organization.
+
+---
+
+### 12. Jurisdiction
+
+- **Definition:**  
+  The geographic, legal, and regulatory area where an employee works. Jurisdiction affects which laws, tax regulations, labor guidelines, and benefits apply to an employee. In Global HR systems, this ensures that local compliance and regional differences in employment practices are appropriately managed.
+
+---
+
+### 13. LRU (Local Reporting Unit)
+
+- **Definition:**  
+  A grouping used within some global HR systems to consolidate and report employee data at a localized level. An LRU typically aligns with a specific geographic or regulatory territory, facilitating the generation of region-specific reports and compliance with local requirements.  
+*Note: The term “LRU” might be defined differently depending on the implementation context, but it generally serves to aggregate employee information by local operational need.*
+
+---
+
+### 14. Registration Unit
+
+- **Definition:**  
+  An administrative unit used to register or group employees for statutory, regulatory, or operational purposes. A Registration Unit can be used to ensure employees are recorded under the appropriate legal and compliance frameworks, which might be necessary for local licensing, tax purposes, or workforce statistics.
+
+---
+
+Below is a detailed glossary of key terms and definitions for both Oracle BI Publisher and Oracle Transactional Business Intelligence (OTBI). These definitions explain the main building blocks, components, and features you’ll encounter when working with these two reporting tools in Oracle Cloud environments.
+
+---
+
+## Oracle BI Publisher Definitions
+
+**1. BI Publisher (Oracle Business Intelligence Publisher):**  
+A reporting solution that separates data extraction from its presentation. It allows you to design, manage, format, and deliver highly formatted, pixel-perfect reports. BI Publisher can pull data from multiple sources (SQL queries, XML files, Web services, etc.) and output in various formats, such as PDF, Word, Excel, and HTML.
+
+**2. Data Model:**  
+A construct that defines the source of data for a report. It typically contains one or more SQL queries (or other data extraction methods), parameters to filter data, and data structures that provide the basis for report output. The data model acts as the bridge between your source data and the report templates.
+
+**3. Template:**  
+A layout design that determines how the data from the data model is presented. Templates are usually built using RTF (Microsoft Word), XSL, or other formatting technologies. They contain placeholders for data fields that get populated at runtime, allowing for the creation of professional, formatted documents.
+
+**4. Report Bursting:**  
+A feature that automatically splits a consolidated report into multiple individual reports based on predefined criteria (for example, by region, department, or manager) and distributes them to designated recipients. This is useful when the same report needs to be personalized for multiple stakeholders.
+
+**5. Catalog:**  
+An organized repository or folder structure within BI Publisher where you store and manage data models, templates, reports, and other BI objects. The catalog helps in organizing and controlling access to these objects across the organization.
+
+**6. Report Viewer/Runtime Engine:**  
+The server-side component that processes report requests. It executes the data model query, merges the result with the report template, and renders the final output. This engine produces the output in the format you require and supports dynamic runtime parameters.
+
+**7. Delivery Channels:**  
+Mechanisms that allow reports to be distributed via scheduled delivery options. For example, reports can be emailed to users, placed in shared directories, or published on intranet sites automatically according to a schedule or triggered by events.
+
+---
+
+## Oracle Transactional Business Intelligence (OTBI) Definitions
+
+**1. OTBI (Oracle Transactional Business Intelligence):**  
+A real-time, interactive reporting and analysis tool embedded in Oracle Cloud applications. OTBI is designed for business users, enabling them to create ad hoc queries and visual analyses without needing technical expertise or deep knowledge of the underlying database structures.
+
+**2. Subject Areas:**  
+Logical groupings of data that correspond to specific business functions (for example, financials, human resources, supply chain). Each subject area defines a set of related views and fields. Users select a subject area as the starting point for building analyses, ensuring the data is organized in a familiar, business-centric way.
+
+**3. Analysis:**  
+An OTBI report or query that displays the results of a data query. Analyses can be presented in various formats—including tables, charts, pivot tables, and graphs—and are built using a drag-and-drop interface. They let users explore metrics, drill down into details, and filter data on the fly.
+
+**4. Dashboard:**  
+A consolidated view where multiple OTBI analyses are arranged in one screen to provide a comprehensive, interactive snapshot of key performance metrics. Dashboards are equipped with prompts and filters to let users customize the view and drill down into specifics.
+
+**5. Dashboards Prompts and Filters:**  
+Prompts are user interface elements (such as drop-down lists, date pickers, or checkboxes) that allow users to specify criteria for their analysis. Filters are applied to the data in an analysis to narrow down the results, ensuring that the information displayed is tailored to the user's needs.
+
+**6. Drill-Down Functionality:**  
+An interactive capability that lets users click on a summarized data point in an analysis or dashboard to see more detailed underlying data. This helps in understanding the context behind key metrics without manually rerunning queries.
+
+**7. Interactive Reporting:**  
+OTBI’s core strength is enabling nontechnical business users to easily create, modify, and interact with reports. Users can change the layout, apply new filters, or pivot data directly within the analysis interface—all without writing any SQL code.
+
+**8. Real-Time Data Access:**  
+Reports in OTBI are executed against live transactional data, ensuring that the insights reflect the most current state of the business. This real-time approach is crucial for operational decision making and timely performance monitoring.
+
+**9. Data Visualization:**  
+OTBI provides a range of graphical representations like bar charts, line graphs, scatter plots, and pivot tables that help users visually interpret data. These visualization tools make it easier to spot trends, compare performance, and communicate insights effectively.
+
+**10. Security and Role-Based Access:**  
+OTBI enforces data security by restricting user access based on roles and permissions defined in Oracle Cloud applications. This ensures that sensitive or proprietary data is only available to authorized users, aligning with organizational security policies.
+
+---
+
+1. Role-Based Access Control (RBAC)
+Definition: RBAC is a security framework that restricts system access to authorized users based on their roles within an organization. Instead of assigning permissions to each individual, permissions are assigned to roles, and users are then granted membership in those roles. This approach simplifies security management by ensuring that users receive only the access necessary for their job functions while supporting the principle of least privilege.
+
+-----
+
+
+Security Console
+Definition: The Security Console is an administrative interface used to manage the security settings of a system, including user access and role assignments. It serves as a central hub where administrators can:
+
+Manage Roles: Create, modify, and organize roles (including core, hierarchical, composite, and constrained types) and assign them to users.
+
+Provision Users: Update and manage access rights by assigning the appropriate roles to each user as their responsibilities change.
+
+Monitor and Audit: Track changes to role assignments and security configurations, review access logs, and generate compliance reports to ensure that the system adheres to security policies and regulatory requirements.
+
+Enforce Policies: Ensure that the enterprise’s security policies (such as the principle of least privilege and separation of duties) are robustly applied across the user base.\
+
+---------------------
+

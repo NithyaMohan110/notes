@@ -1,0 +1,187 @@
+Reporting:
+Two kinds of Database:
+One for Online Data Entry: Goal is to make Data Entry Faster. 5 years of data.
+One for Data Warehouse: Data that does not updated will be stored.
+ All historic data will be stored in different structure.
+
+Four types of reports:
+BI Publisher (Online Database)
+OTBI (Online Database)
+FRS – Financial Reporting Solution (Data Warehouse)
+SmartView (Data Warehouse)
+
+Steps involved in Reporting:
+Gather the data(xml format)
+To format the data(how we want to present it to the clients)
+Distribute the data (send it to desired location)
+
+BI publisher will perform above steps independently.
+There is 1-many-many relationship.
+
+==============================================================================
+
+Distribution: 
+For distribution we should perform Splitting and Delivering the report.
+Every Split will be delivered to the user. 
+Reason to split is, every receiver should receive only desired data.
+Splitting in BI Publisher means Bursting.
+Splitting is based on Key Column. Every Split should contain only one
+Deliverable Key (Highest Level).
+
+Bursting in BI Publisher is a process where data is split into blocks,
+and documents are generated for each block before being delivered to
+different destinations. The splitting is governed by a "Split By" element,
+while the delivery method is determined by a "Deliver By" element. 
+This allows for customized formatting and delivery options for each 
+segment of the report.
+
+In OTBI, bursting is used to divide large datasets into multiple smaller 
+datasets. The logic for bursting ensures that reports are split into chunks,
+but there can be challenges, such as compressed output being placed into 
+multiple zip folders incorrectly
+
+The key difference is that BI Publisher provides more control over
+formatting and delivery options, while OTBI focuses on breaking large 
+datasets into manageable parts for reporting.
+
+===============================================
+
+BI Publisher Bursting Process
+Data Extraction: A query is executed to retrieve the full dataset.
+
+Splitting Data: The data is divided into blocks based on a "Split By" element 
+(e.g., CUSTOMER_ID for invoices).
+
+Delivery Definition: A "Deliver By" element determines how each report is 
+formatted and delivered.
+
+Report Generation: A separate document is created for each split segment.
+
+Delivery: Reports are sent to different destinations
+ (email, printer, FTP, etc.) based on predefined rules
+
+================================================
+
+OTBI Bursting Process
+Data Extraction: A report is generated with all required data.
+
+Splitting Data: The report is divided into smaller datasets using agents.
+
+Delivery: The agent ensures that each recipient receives only the relevant
+portion of the report
+
+The key difference is that BI Publisher provides more control over
+formatting and delivery options,while OTBI uses agents to distribute 
+reports efficiently.
+
+============================================================================
+
+Scheduling:
+
+Scheduling in BI Publisher and OTBI allows users to automate report 
+generation and delivery at specified times.
+
+BI Publisher Scheduling:
+Report Scheduling: Users can schedule reports to run at specific intervals 
+(daily, weekly, monthly).
+
+Delivery Options: Reports can be sent via email, FTP, printer, or web 
+folders.
+
+Parameter Customization: Users can define parameters for scheduled reports.
+
+Job Monitoring: Scheduled jobs can be tracked and managed.
+
+============================================
+
+OTBI Scheduling:
+Agent-Based Scheduling: OTBI uses agents to automate report execution.
+
+Conditional Execution: Reports can be triggered based on conditions.
+
+Data Refresh: Scheduled reports ensure updated data is available.
+
+Delivery Methods: Reports can be sent via email or dashboards.
+
+
+
+=============================================================================
+
+Payroll Elements:
+Two types:
+Deduction Element
+Earning Element
+
+elements are also categorized as 
+recurring
+non recurring
+
+processed along with salary
+not processed along with salary
+
+
+
+
+SQL Topics:
+
+give me info and queries about all these topics in detail:
+ what is data
+what is DB
+ select
+ where
+and
+or
+like
+operators
+between
+in
+null
+alias
+concat
+orderby
+upper lower
+length
+dual
+substr
+LPad, RPad
+LTrim, RTrim
+round
+trunc
+timestamp
+dates
+single row functions
+null
+grouping functions
+group by
+having
+subqueries
+joins
+over
+partition
+case
+exists
+alter
+merge
+sequence
+DCL 
+Offset
+fetch
+commit
+savepoint
+rollback
+implicit and explicit commit
+on delete cascade
+unused column
+ER Diagram
+Large objects and internal data types
+delete
+truncate
+drop
+view
+ranks
+indexes
+Flashback table
+creating directory on external table
+purge
+set unused
+normalization
