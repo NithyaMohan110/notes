@@ -1,0 +1,344 @@
+ERP(enterprise resource planning): s/w to streamline business process
+finance hr and procurement
+procurement sales scm manufacturing
+
+Fusion Cloud is Oracle’s integrated suite of cloud applications, including Fusion ERP, HCM, CX, SCM, and EPM, designed to help organizations
+ modernize their business operations and drive digital transformation. Fusion Cloud offers a comprehensive set of enterprise-grade
+ applications powered by advanced technologies such as artificial intelligence, machine learning,
+ and analytics to empower organizations with agility, innovation, and efficiency in today’s rapidly evolving business landscape.
+Oracle Fusion Appln:
+ERP, HCM, CX, SCM, and EPM
+--------------------------------------------------------------------------------------------
+Oracle Fusion HCM:
+Workforce deploy 
+develep 
+compensation
+span business
+
+------------------------------------------------------------------------------------
+HR business process flow:
+recruit 
+track and pay
+develop
+assess
+rewards
+retire
+--------------------------------------------------------------
+HCM Tech                         Tech
+BI publ                          Global HR
+OTBI                             Compensation Management
+Fast Formulas
+
+2 types of fusion hcm users
+implementation users
+admin users
+
+Security Framework:
+Privileges
+duty role(hire terminate)
+job role(hr specialist)
+employee
+
+
+
+run user and role syncronization process(if any role is created and the status is in waiting then we can use this)
+when we create data role we need to select job role
+
+function security policy is used to remove privileges
+
+S&M task search manage organisation security profile(if we want to give custom instead of view all org)
+
+implementation project: it is a group of modules or projects
+Project Manager will create the implementation project
+
+
+
+---------------------------------------------------------------
+Enterprise Structure
+
+Name which is given to the company
+also known as Org structure
+Three fundamental structures:
+Legal
+Managerial
+
+Functional structures:
+primary 
+Division
+BU
+Depts
+
+LDG is created for every divison(country) for payroll and ledger
+LDG and ledger does not come under Enterprise structure
+
+------------------------------------------------------------------------------
+When we create LE , Registration unit and reporting unit are automatically created.
+
+Payroll Santutary Unit(PSU)
+Tax reporting unit(TRU)
+
+
+Manage LE reporting unit lo
+Enable cheyyali
+
+
+Manage BU ->Set Assignment ->Assign BU Business Fuction(RDS should be selected whatever you created)
+
+-----------------------------------------------------------------------------------
+
+Workforce Structures:
+
+Job set
+job
+grade
+department
+grade set
+
+Jobs- USed Service industries
+Position Used by industries that maintain headcount
+
+Bench mark - Other jobs and reports and salary
+Progression - next job in grade ladder
+
+Manage jobs lo velli we can group jobs
+if we want to enable for particular country we can add tags. + for adding - for not adding
+-----------------------------------------------------------
+Lookups are values provided by oracle
+three types
+standard/system- cannot modify
+extension- add new items but cant delete items
+user- can do both
+
+----------------------------------------------------------------
+Position Lookups are 5
+
+
+if we want to create positions, depts and jobs are mandatory
+Grade: used to define level of compensation
+
+Position types are of 3 types:
+single incumbent- only one position
+shared- multiple employees can take based on shifts
+pooled- multiple ppl in the same roll intern is an ex
+-------------------------------------------------------------
+
+Grade-
+Grade rate
+Grade steps
+grade ladder
+
+grouping grades into ladders- Grade Ladder/Sequence of grades
+
+Ceiling steps: if we give this to 3rd step then till third step it is mandatory then it is optional.
+----------------------------------------------------------------
+Person Management - we can find employee details here
+HR Specialist- 
+Directory
+
+-----------------------------------------------------------------
+Transfer:
+4 actions
+Transfer(local)- within le
+Global one bu to another bu
+Temp assignment transfer for temp like for few months
+Global temp assignment -transfer from one bu to another bu for temp like for few months
+
+----------------------------------------------------------------------------
+
+My client groups->Person Management
+
+
+Manage Approval Tansactions for HCM:
+(indhulo Position trees ni use chestham)
+Rules:
+
+If admin wants to check the emp details hired by the functional consultant , then he can put that rule
+Manage Approval Tansactions for HCM -> set rules
+
+Bypass approvals:
+if we want to process a transaction without any approval process , then we should enable bypass approvals
+
+Manage Approval groups:
+Static - Members are manually assigned and remain fixed until explicitly changed by an administrator.
+Dynamic - Members are automatically assigned based on predefined criteria such as roles, departments, geographic locations, or other attributes.
+
+------------------------------------------------------------------------------------------------
+Roles:
+Job roles: group of duty roles
+It is a generic role. It is a job that the worker is hired to do.
+ex: Payroll manager
+Run payroll view pay slips(duty roles assigned to job role)
+
+Data role: Job role+ security profile(to restrict the data)
+
+Abstract role: Define a worker's role in the enterprise irrespective of the job. Every worker will atleast one abstract role in which he
+ will work on standard funtions
+
+process:
+duty role -> Job role-> data role -> Employee
+
+while creating a role: train
+Basic Info
+Function security policies
+Data security policies
+Role hierarchy
+Segregation of duties
+Users
+Summary
+------------------------------------------------------------------------------------------
+Manage mass Updates:
+if we want to update to many emps at once we can use this task
+------------------------------------------------------------------------------------------
+
+two types of security:
+Application security: what type of applications the user can perform
+Data Security: what data can be seen by the user
+
+Security Profile: Identify instances of hcm objects(country, payroll, job requisition....)
+
+
+--------------------------------------------------------------------------------------------------------
+
+Person:
+Manage Person-Refers to managing individuals internally within an organization or a system.
+Public Person-Refers to individuals whose profiles, roles, or activities are visible and accessible externally to the public.
+
+--------------------------------------------------------------------------------------------------------
+
+Pre defined HCM Security Profiles:
+View all countries
+View all people
+View all dept
+View all org
+
+if you want to create a data role, make sure job role exists.
+
+Manage Org Security Profile(can create own org security profile)
+
+Data role train:
+Data role
+Security criteria
+Security profiles
+Review
+-------------------------------------------------------------------------------------------------------
+
+Role Provisoning:
+Manage Role Provisioning rules -> set rules to user
+
+-------------------------------------------------------------------------------------------------------
+
+LDAP: Lightweight Directory access protocol
+used to access and manage directory info over the network
+
+Reference data set is also called as set enabled.
+We cannot assign security profiles directly
+-----------------------------------------------------------------------------------------------------
+Document of Records:
+contains the info about individuals
+it allows us to store info about individuals
+uses:
+Accessibility
+expiry notification
+
+to configure dor:
+Define doc categories
+define doc sub categories
+define doc type
+Attach these doc type to the person management
+HR doc of records archive lo ivi store ayithai
+
+----------------------------------------------------------------------------------------------------
+Fusion Trees:
+Is a flexible framework that tells about the hierarchy within the enterprise
+Manage them in workforce structures
+should create tree version first before creating any tree.
+4 types:
+position trees
+org trees
+dept trees- top node is dept and child nodes are also dept
+cannot add more than one line of depts
+geography trees- used to represent the countries
+top level node is country sub level nodes can be states
+
+-----------------------------------------------------------------------------------------------------
+
+Position syncronization 
+two levels
+mass updates
+
+------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
