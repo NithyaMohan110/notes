@@ -1,0 +1,6 @@
+FEATURE				LEGAL REPORTING UNIT								LEGAL REPORT JURISDICTION
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Purpose				Taxes,Payroll,Compliance							Defines geographic tax, Legal Boundaries
+Scope					Sub-Division of Legal Entity for Compliance				Area where a company follows legal rules and regulations
+Usage					Payroll Processing, Tax Filing, Social Security Reporting		Taxation,Labour Laws,Corporate Compliance								
+Example				LRU-Bangalore, LRU-Mumbai in India						GST-India, Income Tax-US
